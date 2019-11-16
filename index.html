@@ -5,8 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container navbar-container mx-0">
+            <div class="row w-100">
+                <div class="col-2">
+                    <button type="button" class="btn btn-info">View High Scores</button> 
+                </div>
+                <div class="col-7"></div>
+                <div class="col-3">
+                    <form>
+                        <div class="form-group row">
+                            <label for="timeRemaining" class="col-sm-7 col-form-label">Time Remaining</label>
+                            <div class="col-sm-5">
+                                <input type="number" readonly class="form-control" id="timeRemaining" placeholder="0">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container landing">
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                <h1>Code Quiz</h1>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                <p>Answer all the questions before the timer runs out!  Each wrong answer will subtract 15 seconds from the timer.  The more time left on the clock when all questions are answered, the higher your score!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button type="button" class="btn btn-secondary btn-lg">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
     
 </body>
 </html>
