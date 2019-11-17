@@ -19,9 +19,9 @@
                 <div class="col-3">
                     <form>
                         <div class="form-group row">
-                            <label for="timeRemaining" class="col-sm-7 col-form-label">Time Remaining</label>
+                            <label for="time-remaining" class="col-sm-7 col-form-label">Time Remaining</label>
                             <div class="col-sm-5">
-                                <input type="number" readonly class="form-control" id="timeRemaining" placeholder="0">
+                                <input type="number" readonly class="form-control" id="time-remaining" placeholder="0">
                             </div>
                         </div>
                     </form>
@@ -30,7 +30,7 @@
         </div>
     </nav>
 
-    <div class="container landing">
+    <div id="landing-container" class="container">
         <div class="row mb-3">
             <div class="col-12 text-center">
                 <h1>Code Quiz</h1>
@@ -43,11 +43,58 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-                <button type="button" class="btn btn-secondary btn-lg">Start Quiz</button>
+                <button id="start-button" type="button" class="btn btn-secondary btn-lg">Start Quiz</button>
             </div>
         </div>
     </div>
 
-    
+    <div id="quiz-container" class="container d-none">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <h2 id="question-title">Example question</h2>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary button-js">Answer 1</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary button-js">Answer 2</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary button-js">Answer 3</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary button-js">Answer 4</button>
+                    </div>
+                </div>
+                <div id="result-message" class="row d-none border-top border-light">
+                    <div class="col-12">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div id="final-container" class="container d-none">
+        <div class="row">
+            <div class="col-12 text-center">
+                <form>
+                    <div class="form-group row">
+                        <label for="final-score" class="col-sm-7 col-form-label">Final Score</label>
+                        <div class="col-sm-5">
+                            <input type="number" readonly class="form-control" id="final-score" placeholder="0">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./questions.js"></script>
 </body>
 </html>
