@@ -24,9 +24,9 @@ function initQuiz() {
             answer: "method"
         },
         {
-            title: "The programming language used to control the style of a web application is ____.",
-            choices: ["javascript", "HTML", "CSS", "jQuery"],
-            answer: "CSS"
+            title: "The logical operator that represents 'or' is ____.",
+            choices: ["||", "OR", "&&", "==="],
+            answer: "||"
         }
       ];
 //  Clicking the "Start Quiz" button starts the quiz, hides the landing container, and displays the quiz container
